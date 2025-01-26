@@ -1,0 +1,105 @@
+
+
+#profile-list-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.85); 
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  #profile-list-container h2 {
+    color: #007BFF;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  #profile-list-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #profile-list-container ul li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #profile-list-container ul li form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+  }
+  
+  #profile-list-container ul li input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #profile-list-container ul li .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  
+  #profile-list-container ul li button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  
+  #profile-list-container ul li .edit-button {
+    background-color: #28a745;
+  }
+  
+  #profile-list-container ul li .edit-button:hover {
+    background-color: #218838;
+  }
+  
+ 
+  #profile-list-container ul li .delete-button {
+    background-color: #dc3545; 
+  }
+  
+  #profile-list-container ul li .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+
+  #profile-list-container ul li .update-button {
+    background-color: #007bff; 
+    padding: 25px;
+  }
+  
+  #profile-list-container ul li .update-button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

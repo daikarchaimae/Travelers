@@ -1,10 +1,10 @@
-/* ReservationForm.css */
+
 
 #reservation-form {
   max-width: 500px;
   margin: 50px auto;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.85); /* Slightly transparent */
+  background: rgba(255, 255, 255, 0.85);
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -55,7 +55,7 @@
   margin-top: 15px;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

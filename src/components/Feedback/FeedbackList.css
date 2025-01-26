@@ -1,10 +1,10 @@
-/* FeedbackList.css */
+
 
 #feedback-list {
   max-width: 800px;
   margin: 50px auto;
   padding: 40px;
-  background: rgba(255, 255, 255, 0.85); /* Slightly transparent */
+  background: rgba(255, 255, 255, 0.85); 
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -29,61 +29,73 @@
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: center; 
 }
 
-#feedback-list ul li input {
-  flex-grow: 1;
+.feedback-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.edit-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-form input {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-#feedback-list ul li .buttons {
+.buttons {
   display: flex;
+  justify-content: center; 
   gap: 10px;
+  margin-top: 10px;
 }
 
-/* General Button Styles */
-#feedback-list ul li button {
+button {
   padding: 10px 15px;
   font-size: 16px;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Edit Button */
-#feedback-list ul li .edit-button {
-  background-color: #28a745; /* Green */
+.edit-button {
+  background-color: #28a745; 
 }
 
-#feedback-list ul li .edit-button:hover {
+.edit-button:hover {
   background-color: #218838;
 }
 
-/* Delete Button */
-#feedback-list ul li .delete-button {
-  background-color: #dc3545; /* Red */
+.delete-button {
+  background-color: #dc3545; 
 }
 
-#feedback-list ul li .delete-button:hover {
+.delete-button:hover {
   background-color: #c82333;
 }
 
-/* Update Button */
-#feedback-list ul li .update-button {
-  background-color: #007bff; /* Blue */
+.update-button {
+  background-color: #007bff; 
 }
 
-#feedback-list ul li .update-button:hover {
+.update-button:hover {
   background-color: #0056b3;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

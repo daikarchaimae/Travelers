@@ -1,10 +1,10 @@
-/* ReservationList.css */
+
 
 #reservation-list-container {
   max-width: 800px;
   margin: 50px auto;
   padding: 40px;
-  background: rgba(255, 255, 255, 0.85); /* Slightly transparent */
+  background: rgba(255, 255, 255, 0.85); 
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -51,7 +51,7 @@
   gap: 10px;
 }
 
-/* General Button Styles */
+
 #reservation-list-container ul li button {
   padding: 10px 15px;
   font-size: 16px;
@@ -61,34 +61,34 @@
   cursor: pointer;
 }
 
-/* Edit Button */
+
 #reservation-list-container ul li .edit-button {
-  background-color: #28a745; /* Green */
+  background-color: #28a745; 
 }
 
 #reservation-list-container ul li .edit-button:hover {
   background-color: #218838;
 }
 
-/* Delete Button */
+
 #reservation-list-container ul li .delete-button {
-  background-color: #dc3545; /* Red */
+  background-color: #dc3545; 
 }
 
 #reservation-list-container ul li .delete-button:hover {
   background-color: #c82333;
 }
 
-/* Update Button */
+
 #reservation-list-container ul li .update-button {
-  background-color: #007bff; /* Blue */
+  background-color: #007bff;
 }
 
 #reservation-list-container ul li .update-button:hover {
   background-color: #0056b3;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

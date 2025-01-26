@@ -5,6 +5,7 @@ import './ReservationForm.css';
 
 function ReservationForm() {
   const [city, setCity] = useState('');
+  const [nom, setNom] = useState('');
   const [checkInDate, setCheckInDate] = useState('');
   const [checkOutDate, setCheckOutDate] = useState('');
   const [roomType, setRoomType] = useState('');
@@ -13,18 +14,25 @@ function ReservationForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addReservation({ id: Date.now(), city, checkInDate, checkOutDate, roomType }));
-    setCity('');
+    dispatch(addReservation({ id: Date.now(),nom, city, checkInDate, checkOutDate, roomType }));
     setCheckInDate('');
+    setCity('');
+    setNom('');
     setCheckOutDate('');
     setRoomType('');
     setSuccessMessage('Reservation added successfully!');
-    setTimeout(() => setSuccessMessage(''), 3000); // Hide message after 3 seconds
+    setTimeout(() => setSuccessMessage(''), 3000); 
   };
 
   return (
     <form id="reservation-form" onSubmit={handleSubmit}>
       <h2>New Reservation</h2>
+      <input
+        type="text"
+        value={nom}
+        onChange={(e) => setNom(e.target.value)}
+        placeholder="Nom Complet"
+      />
       <input
         type="text"
         value={city}

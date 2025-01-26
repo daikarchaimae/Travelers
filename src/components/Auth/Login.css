@@ -1,10 +1,10 @@
-/* Login.css */
+
 
 #login-form {
   max-width: 400px;
   margin: 50px auto;
   padding: 30px;
-  background: rgba(255, 255, 255, 0.85); /* Slightly transparent */
+  background: rgba(255, 255, 255, 0.85); 
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -49,7 +49,7 @@
 }
 
 #login-form button a:hover {
-  color: white; /* Ensure link color doesn't change on hover */
+  color: white; 
 }
 
 #error-message {
@@ -57,7 +57,7 @@
   margin-top: 10px;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

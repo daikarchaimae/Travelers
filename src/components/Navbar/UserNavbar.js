@@ -18,11 +18,11 @@ function UserNavbar({ setIsAuthenticated }) {
           <li><Link to="/reservations">Reservations</Link></li>
           <li><Link to="/reservation/new">New Reservation</Link></li>
           <li><Link to="/profile">Profile</Link></li>
+          <li><Link to="/profileList">ProfileList</Link></li>
           <li><Link to="/feedback/new">Feedback</Link></li>
           <li><Link to="/feedbacks">Feedbacks</Link></li>
           <li><Link to="/data">Data</Link></li>
-          <li><Link to="/post-data">Data Post</Link></li>
-          <li><button onClick={handleLogout}>Logout</button></li> {/* Add logout button */}
+          <li><button onClick={handleLogout}>Logout</button></li> 
         </ul>
       </nav>
     );

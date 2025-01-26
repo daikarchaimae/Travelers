@@ -4,7 +4,7 @@ import { updateProfile, deleteProfile } from '../../redux/slices/profileSlice';
 import './ProfileList.css';
 
 function ProfileList() {
-  const profiles = useSelector((state) => state.profiles || []); // Ajoutez une valeur par défaut vide
+  const profiles = useSelector((state) => state.profiles || []); 
   const dispatch = useDispatch();
   const [editingProfile, setEditingProfile] = useState(null);
   const [name, setName] = useState('');
@@ -32,7 +32,7 @@ function ProfileList() {
   };
 
   return (
-    <div className="profile-list-container">
+    <div id="profile-list-container">
       <h2>Profile List</h2>
       <ul>
         {profiles.map((profile) => (
@@ -57,13 +57,15 @@ function ProfileList() {
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="Phone"
                 />
-                <button type="submit">Update</button>
+                <button className="update-button" type="submit">Update</button>
               </form>
             ) : (
               <>
                 <span>{profile.name} - {profile.email} - {profile.phone}</span>
-                <button onClick={() => handleEdit(profile)}>Edit</button>
-                <button onClick={() => handleDelete(profile.id)}>Delete</button>
+                <div className="buttons">
+                  <button className="edit-button" onClick={() => handleEdit(profile)}>Edit</button>
+                  <button className="delete-button" onClick={() => handleDelete(profile.id)}>Delete</button>
+                </div>
               </>
             )}
           </li>

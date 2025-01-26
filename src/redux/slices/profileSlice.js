@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const profileSlice = createSlice({
   name: 'profiles',
-  initialState: [], // Assurez-vous que l'état initial est un tableau vide
+  initialState: [],
   reducers: {
     addProfile(state, action) {
       state.push(action.payload);

@@ -1,21 +1,29 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+
 import './Home.css';
 
 function Home({ isAuthenticated }) {
-  const location = useLocation();
-  
-  const { email } = location.state || { email: 'Guest' };
+  const email = useSelector((state) => state.auth.email);
 
   return (
     <div className="home-container">
-      <h1>Welcome to Hotel Reservation, {email}!</h1>
-      <p>This is your home page.</p>
-      <p>Choose your city and book your stay with us!</p>
-      {!isAuthenticated && (
+      {email ? (
+        <>
+          <h1>Welcome, {email}!</h1>
+          <p>This is your home page.</p>
+        </>
+      ) : (
+        <>
+          <h1>Welcome to the Hotel Management App!</h1>
+          <p>Please log in to access your account and manage your reservations.</p>
+        </>
+      )}
+        {!isAuthenticated && (
         <button><Link to='/login'>Login</Link></button>
       )}
+
     </div>
   );
 }

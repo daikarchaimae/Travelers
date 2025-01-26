@@ -1,14 +1,17 @@
-/* App.css */
+
 
 html, body {
   height: 100%;
   margin: 0;
+  opacity: 0.9;
 }
 
 body {
-  background-image: url('/public/blue.jpj.jpg');
+  background-image: url('/public/hotel.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   font-family: Arial, sans-serif;
+ 
 }
+

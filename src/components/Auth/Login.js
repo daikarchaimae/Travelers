@@ -18,7 +18,7 @@ function Login({ setIsAuthenticated }) {
       const result = await validateEmail(email);
       if (result.length > 0) {
         dispatch(login({ email }));
-        setIsAuthenticated(true); // Set authenticated state to true
+        setIsAuthenticated(true); 
         navigate('/home', { state: { email } });
       } else {
         setError('Access denied. Email not recognized.');

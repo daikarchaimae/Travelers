@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const reservationSlice = createSlice({
   name: 'reservations',
-  initialState: [], // Assurez-vous que l'état initial est un tableau vide
+  initialState: [], 
   reducers: {
     addReservation(state, action) {
       state.push(action.payload);

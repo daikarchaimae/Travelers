@@ -1,10 +1,9 @@
-/* Home.css */
 
 .home-container {
   max-width: 800px;
   margin: 50px auto;
   padding: 40px;
-  background: rgba(230, 236, 249, 0.85); /* Slightly transparent to show the gradient through */
+  background: rgba(230, 236, 249, 0.85); 
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -96,10 +95,10 @@ button a {
 }
 
 button a:hover {
-  color: white; /* Ensure link color doesn't change on hover */
+  color: white; 
 }
 
-/* Add responsiveness */
+
 @media screen and (max-width: 600px) {
   .home-container {
     padding: 20px;

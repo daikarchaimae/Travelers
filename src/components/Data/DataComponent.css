@@ -1,0 +1,49 @@
+
+
+.data-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.85); 
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .data-container h2 {
+    color: #007BFF;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .data-container ul {
+    list-style-type: none;
+    padding: 0;
+    color: #333;
+  }
+  
+  .data-container ul li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    font-size: 1.2em;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+ 
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
