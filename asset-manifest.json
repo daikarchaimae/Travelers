@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/daikarchaimae/Travelers.git/static/css/main.d52b437e.css",
+    "main.js": "/daikarchaimae/Travelers.git/static/js/main.f41258f4.js",
+    "static/media/hotel.jpg": "/daikarchaimae/Travelers.git/static/media/hotel.14e75b359d3a1f65c4a4.jpg",
+    "index.html": "/daikarchaimae/Travelers.git/index.html",
+    "main.d52b437e.css.map": "/daikarchaimae/Travelers.git/static/css/main.d52b437e.css.map",
+    "main.f41258f4.js.map": "/daikarchaimae/Travelers.git/static/js/main.f41258f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d52b437e.css",
+    "static/js/main.f41258f4.js"
+  ]
+}
